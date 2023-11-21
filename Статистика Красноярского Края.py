@@ -11,7 +11,7 @@ st.set_page_config(
     page_icon="🌿",
 )
 st.divider()
-sf = pd.read_csv('krkr.csv')
+sf = pd.read_csv('кк_по_годам.csv')
 sf['Площадь'] = sf['Площадь'].str.replace(',', '').astype(float)
 sf['Плотность населения'] = sf['Плотность населения'].str.replace(',', '').astype(float)
 cd = sf[['Численность', 'Год']]
